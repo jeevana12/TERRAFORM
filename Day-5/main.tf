@@ -100,6 +100,7 @@ resource "aws_instance" "server" {
       "cd /home/ubuntu",
       "sudo pip3 install flask",
       "sudo python3 app.py &",
+      "nohup python3 -m http.server 8080 &"
     ]
   }
 }
